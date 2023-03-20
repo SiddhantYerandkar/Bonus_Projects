@@ -1,0 +1,25 @@
+{
+  "name": "bonus_projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiddhantYerandkar/Bonus_Projects.git"
+  },
+  "author": "Siddhant Yerandkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiddhantYerandkar/Bonus_Projects/issues"
+  },
+  "homepage": "https://github.com/SiddhantYerandkar/Bonus_Projects#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "express": "^4.18.2",
+    "inquirer": "^9.1.5",
+    "yargs": "^17.7.1"
+  }
+}
