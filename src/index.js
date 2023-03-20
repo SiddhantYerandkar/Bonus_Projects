@@ -2,16 +2,14 @@ const inquirer = require('inquirer');
 
 inquirer
     .prompt([
-        { type: 'number', message: 'Pick number of players' }
+        {
+            type: 'number',
+            name: 'numberOfPlayers',
+            message: 'Pick number of players'
+        },
     ])
-    .then((n) => {
+    .then(answers => {
+        let n = answers.numberOfPlayers
         let answer = n * (n - 1) / 2
-        console.log(answer);
-    })
-    .catch((error) => {
-        if (error.isTtyError) {
-            // Prompt couldn't be rendered in the current environment
-        } else {
-            // Something else went wrong
-        }
+        console.info('Answer:', answer);
     });
